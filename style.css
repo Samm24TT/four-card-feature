@@ -94,6 +94,40 @@ header .disc {
     .container {
         max-height: 100vh;
         max-width: 1440px;
+    }
+
+    .container .disc {
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .cards {
         display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+    }
+
+    .cards .card {
+        margin-bottom: 0;
+        padding: 20px;
+    }
+
+    .cards .one {
+        align-self: center;
+        grid-column: 3;
+    }
+
+    .cards .four {
+        align-self: center;
+        grid-column: 1;
+    }
+
+    .cards .two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .cards .three {
+        grid-column: 2;
     }
 }
